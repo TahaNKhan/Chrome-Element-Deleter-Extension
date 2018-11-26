@@ -1,0 +1,24 @@
+{
+    "name": "Chrome Element Deleter",
+    "version": "0.1",
+    "description": "Delete an element by clicking on it.",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }],
+    "permissions": [
+        "activeTab"
+    ],
+    "manifest_version": 2,
+    "browser_action": {},
+    "icons": {
+        "16" : "icons/icons50.png",
+        "32" : "icons/icons50.png",
+        "48" : "icons/icons50.png",
+        "128" : "icons/icons100.png"
+    }
+}
